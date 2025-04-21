@@ -1,6 +1,6 @@
 {
   "name": "react-native-shared-components",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "shared-components",
   "source": "./src/index.tsx",
   "main": "./lib/module/index.js",
