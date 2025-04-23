@@ -18,7 +18,7 @@ import {
 } from '../../constants/commonStyles';
 import { Colors } from '../../constants/Colors';
 
-interface IHeader {
+export interface IHeader {
   title?: string;
   style?: StyleProp<ViewStyle>;
   styleTitle?: StyleProp<TextStyle>;
