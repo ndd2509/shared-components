@@ -1,12 +1,21 @@
-import { multiply } from 'react-native-shared-components';
-import { Text, View, StyleSheet } from 'react-native';
+import { Header } from 'react-native-shared-components';
+import { View, StyleSheet } from 'react-native';
 
-const result = multiply(3, 7);
+// const result = multiply(3, 7);
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Header
+        title="AAA"
+        isIcLeft={true}
+        // renderIcLeft={() => {
+        //   return <Text>dasdasd</Text>;
+        // }}
+        onPressIcLeft={() => {
+          console.log('log 1234');
+        }}
+      />
     </View>
   );
 }
@@ -14,7 +23,5 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
