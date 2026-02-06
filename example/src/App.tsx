@@ -1,7 +1,9 @@
-import { BaseContainer } from 'react-native-shared-components';
+import {
+  BaseButton,
+  BaseContainer,
+  BaseText,
+} from 'react-native-shared-components';
 import { StyleSheet, View } from 'react-native';
-import BaseText from '../../src/components/BaseText';
-import BaseButton from '../../src/components/BaseButton';
 
 // const result = multiply(3, 7);
 

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# shared-components
-shared-components
-=======
 # react-native-shared-components
 
 shared-components
@@ -35,4 +31,3 @@ MIT
 ---
 
 Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
->>>>>>> 0b1af12 (chore: initial commit)

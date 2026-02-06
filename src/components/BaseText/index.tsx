@@ -9,7 +9,7 @@ interface BaseTextProps extends TextProps {
   children: React.ReactNode;
 }
 
-const BaseText: React.FC<BaseTextProps> = ({
+export const BaseText: React.FC<BaseTextProps> = ({
   type = 'Medium',
   size,
   style,
@@ -41,5 +41,3 @@ const styles = StyleSheet.create({
     fontWeight: '400',
   },
 });
-
-export default BaseText;

@@ -12,7 +12,7 @@ import {
 import { type ReactNode } from 'react';
 import { styles } from './styles';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import BaseText, { type BaseTextType } from '../BaseText';
+import { BaseText, type BaseTextType } from '../BaseText';
 
 interface IBaseContainer {
   title?: string;

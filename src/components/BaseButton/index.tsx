@@ -7,8 +7,8 @@ import {
   type TextStyle,
   type TouchableOpacityProps,
 } from 'react-native';
-import BaseText, { type BaseTextType } from '../BaseText';
 import { Colors } from '../../constants/Colors';
+import { BaseText, type BaseTextType } from '../BaseText';
 
 export type ButtonVariant = 'primary' | 'link-subtle' | 'red' | 'brand-subtle';
 export type ButtonSize = 'small' | 'regular' | 'large';
@@ -26,7 +26,7 @@ interface BaseButtonProps extends Omit<TouchableOpacityProps, 'style'> {
   textStyle?: TextStyle;
 }
 
-const BaseButton: React.FC<BaseButtonProps> = ({
+export const BaseButton: React.FC<BaseButtonProps> = ({
   type = 'common',
   variant = 'primary',
   size = 'regular',
@@ -223,5 +223,3 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
 });
-
-export default BaseButton;
