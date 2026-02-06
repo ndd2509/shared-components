@@ -2,17 +2,14 @@
   "name": "react-native-shared-components",
   "version": "0.3.2",
   "description": "shared-components",
-  "source": "./src/index.tsx",
+ "source": "./src/index.tsx",
   "main": "./src/index.tsx",
   "module": "./src/index.tsx",
-  "exports": {
+  "types": "./lib/typescript/src/index.d.ts",
+ "exports": {
     ".": {
-      "import": {
-        "default": "./lib/module/index.js"
-      },
-      "require": {
-        "default": "./lib/commonjs/index.js"
-      }
+      "types": "./lib/typescript/src/index.d.ts",
+      "default": "./lib/module/index.js"
     },
     "./package.json": "./package.json"
   },
