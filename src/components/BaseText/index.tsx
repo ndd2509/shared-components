@@ -3,7 +3,7 @@ import { Text, StyleSheet, type TextProps } from 'react-native';
 
 export type BaseTextType = 'ExtraBold' | 'Bold' | 'SemiBold' | 'Medium';
 
-interface BaseTextProps extends TextProps {
+export interface BaseTextProps extends TextProps {
   type?: BaseTextType;
   size?: number;
   children: React.ReactNode;

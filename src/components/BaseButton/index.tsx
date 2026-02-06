@@ -14,7 +14,7 @@ export type ButtonVariant = 'primary' | 'link-subtle' | 'red' | 'brand-subtle';
 export type ButtonSize = 'small' | 'regular' | 'large';
 export type ButtonType = 'common' | 'icon';
 
-interface BaseButtonProps extends Omit<TouchableOpacityProps, 'style'> {
+export interface BaseButtonProps extends Omit<TouchableOpacityProps, 'style'> {
   type?: ButtonType;
   variant?: ButtonVariant;
   size?: ButtonSize;
