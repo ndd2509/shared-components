@@ -1,0 +1,33 @@
+{
+  "name": "@shared-components/core",
+  "version": "1.0.0",
+  "description": "Shared React Native components library",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build",
+    "release": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndd2509/shared-components.git"
+  },
+  "keywords": ["react-native", "components", "ui", "shared"],
+  "author": "dinhdung250998@gmail.com",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.70.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-native": "^0.73.0",
+    "typescript": "^5.0.0"
+  }
+}
