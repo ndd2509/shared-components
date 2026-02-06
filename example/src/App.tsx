@@ -1,22 +1,20 @@
-import { Header } from 'react-native-shared-components';
-import { View, StyleSheet } from 'react-native';
+import { BaseContainer } from 'react-native-shared-components';
+import { StyleSheet, View } from 'react-native';
+import BaseText from '../../src/components/BaseText';
+import BaseButton from '../../src/components/BaseButton';
 
 // const result = multiply(3, 7);
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Header
-        title="AAA"
-        isIcLeft={true}
-        // renderIcLeft={() => {
-        //   return <Text>dasdasd</Text>;
-        // }}
-        onPressIcLeft={() => {
-          console.log('log 1234');
-        }}
-      />
-    </View>
+    <BaseContainer style={styles.container} isHeader title="1234">
+      <View style={styles.container}>
+        <BaseText type="Bold" size={16}>
+          1234
+        </BaseText>
+        <BaseButton type="common" label="Button" />
+      </View>
+    </BaseContainer>
   );
 }
 
