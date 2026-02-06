@@ -1,3 +1,3 @@
-export * from './BaseButton';
-export * from './BaseContainer';
-export * from './BaseText';
+export * from './button';
+export * from './container';
+export * from './text';
