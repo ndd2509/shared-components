@@ -1,8 +1,8 @@
 {
   "name": "react-native-shared-components",
-  "version": "0.3.1",
+  "version": "0.3.4",
   "description": "shared-components",
-    "source": "./src/index.tsx",
+  "source": "./src/index.tsx",
   "main": "./src/index.tsx",
   "module": "./src/index.tsx",
   "types": "./lib/typescript/src/index.d.ts",
@@ -154,6 +154,7 @@
   "dependencies": {
     "react-native-iphone-screen-helper": "^2.1.2",
     "react-native-paper": "^5.13.3",
-    "react-native-safe-area-context": "^5.4.0"
+    "react-native-safe-area-context": "^5.4.0",
+    "react-native-shared-components": "^0.3.3"
   }
 }

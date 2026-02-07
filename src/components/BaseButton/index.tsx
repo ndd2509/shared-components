@@ -8,7 +8,7 @@ import {
   type TouchableOpacityProps,
 } from 'react-native';
 import { Colors } from '../../constants/Colors';
-import { BaseText, type BaseTextType } from '../BaseText';
+import { BaseText, type EBaseTextType } from '../BaseText';
 
 export type ButtonVariant = 'primary' | 'link-subtle' | 'red' | 'brand-subtle';
 export type ButtonSize = 'small' | 'regular' | 'large';
@@ -40,7 +40,6 @@ export const BaseButton: React.FC<BaseButtonProps> = ({
   ...props
 }) => {
   const sizeStyle = styles[`size_${size}`];
-  const textSizeStyle = styles[`text_${size}`];
   const variantStyle = disabled
     ? styles.variant_disabled
     : styles[`variant_${variant}`];
@@ -48,29 +47,16 @@ export const BaseButton: React.FC<BaseButtonProps> = ({
     ? styles.text_disabled
     : styles[`text_variant_${variant}`];
 
-  const getTextType = (): BaseTextType => {
+  const getTextType = (): EBaseTextType => {
     switch (size) {
       case 'small':
-        return 'Medium';
+        return 'tex14/medium';
       case 'regular':
-        return 'SemiBold';
+        return 'text16/semiBold';
       case 'large':
-        return 'Bold';
+        return 'text20/semiBold';
       default:
-        return 'SemiBold';
-    }
-  };
-
-  const getTextSize = (): number => {
-    switch (size) {
-      case 'small':
-        return 14;
-      case 'regular':
-        return 16;
-      case 'large':
-        return 20;
-      default:
-        return 16;
+        return 'text16/semiBold';
     }
   };
 
@@ -131,8 +117,7 @@ export const BaseButton: React.FC<BaseButtonProps> = ({
           {label && (
             <BaseText
               type={getTextType()}
-              size={getTextSize()}
-              style={[textSizeStyle, textVariantStyle, textStyle]}
+              style={[textVariantStyle, textStyle]}
             >
               {label}
             </BaseText>
@@ -212,14 +197,5 @@ const styles = StyleSheet.create({
   },
   'text_disabled': {
     color: Colors.text_disabled_tertiary_light,
-  },
-  'text_small': {
-    fontSize: 14,
-  },
-  'text_regular': {
-    fontSize: 16,
-  },
-  'text_large': {
-    fontSize: 20,
   },
 });

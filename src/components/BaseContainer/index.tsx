@@ -8,11 +8,11 @@ import {
   type TextStyle,
   type ViewStyle,
   type KeyboardAvoidingViewProps,
+  Text,
 } from 'react-native';
 import { type ReactNode } from 'react';
 import { styles } from './styles';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { BaseText, type BaseTextType } from '../BaseText';
 
 export interface IBaseContainer {
   title?: string;
@@ -31,7 +31,6 @@ export interface IBaseContainer {
   backgroundColorStatusBar?: ColorValue | undefined;
   edges?: Array<'top' | 'bottom' | 'left' | 'right'>;
   keyboardAvoidingViewProps?: Omit<KeyboardAvoidingViewProps, 'children'>;
-  type?: BaseTextType;
 }
 
 export const BaseContainer = ({
@@ -51,7 +50,6 @@ export const BaseContainer = ({
   styleHeader,
   edges,
   keyboardAvoidingViewProps,
-  type = 'Medium',
 }: IBaseContainer) => {
   return (
     <KeyboardAvoidingView
@@ -82,9 +80,7 @@ export const BaseContainer = ({
                   {center}
                 </TouchableOpacity>
               ) : title ? (
-                <BaseText type={type} style={styleTitle}>
-                  {title}
-                </BaseText>
+                <Text style={styleTitle}>{title}</Text>
               ) : (
                 <View />
               )}

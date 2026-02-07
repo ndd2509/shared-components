@@ -11872,7 +11872,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"react-native-shared-components@workspace:.":
+"react-native-shared-components@npm:^0.3.3, react-native-shared-components@workspace:.":
   version: 0.0.0-use.local
   resolution: "react-native-shared-components@workspace:."
   dependencies:
@@ -11898,6 +11898,7 @@ __metadata:
     react-native-iphone-screen-helper: "npm:^2.1.2"
     react-native-paper: "npm:^5.13.3"
     react-native-safe-area-context: "npm:^5.4.0"
+    react-native-shared-components: "npm:^0.3.3"
     release-it: "npm:^17.10.0"
     typescript: "npm:^5.9.3"
   peerDependencies:
