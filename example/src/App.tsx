@@ -10,8 +10,8 @@ import { StyleSheet } from 'react-native';
 export default function App() {
   return (
     <BaseContainer style={styles.container} isHeader title="1234">
-      <BaseText type="tex14/medium">1234</BaseText>
-      <BaseButton type="common" label="Button" />
+      <BaseText type="text14/normal">1234</BaseText>
+      <BaseButton type="common" size="small" label="Button" />
     </BaseContainer>
   );
 }
