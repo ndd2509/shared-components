@@ -6,9 +6,10 @@ import {
   type ViewStyle,
   type TextStyle,
   type TouchableOpacityProps,
+  Text,
 } from 'react-native';
 import { Colors } from '../../constants/Colors';
-import { BaseText, type EBaseTextType } from '../BaseText';
+import { useTheme } from '../../core';
 
 export type ButtonVariant = 'primary' | 'link-subtle' | 'red' | 'brand-subtle';
 export type ButtonSize = 'small' | 'regular' | 'large';
@@ -46,17 +47,18 @@ export const BaseButton: React.FC<BaseButtonProps> = ({
   const textVariantStyle = disabled
     ? styles.text_disabled
     : styles[`text_variant_${variant}`];
+  const { typography } = useTheme();
 
-  const getTextType = (): EBaseTextType => {
+  const getFontSize = () => {
     switch (size) {
-      case 'small':
-        return 'tex14/medium';
-      case 'regular':
-        return 'text16/semiBold';
       case 'large':
-        return 'text20/semiBold';
+        return typography['fontSize/fs16'];
+      case 'regular':
+        return typography['fontSize/fs14'];
+      case 'small':
+        return typography['fontSize/fs12'];
       default:
-        return 'text16/semiBold';
+        return typography['fontSize/fs14'];
     }
   };
 
@@ -115,12 +117,11 @@ export const BaseButton: React.FC<BaseButtonProps> = ({
         <>
           {icon && iconPosition === 'left' && icon}
           {label && (
-            <BaseText
-              type={getTextType()}
-              style={[textVariantStyle, textStyle]}
+            <Text
+              style={[textVariantStyle, textStyle, { fontSize: getFontSize() }]}
             >
               {label}
-            </BaseText>
+            </Text>
           )}
           {icon && iconPosition === 'right' && icon}
         </>

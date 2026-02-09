@@ -87,28 +87,28 @@ export const typographyDefault = {
     fontSize: 'fontSizes/fs12',
   },
 
-  'tex14/normal': {
+  'text14/normal': {
     fontFamily: 'fontFamilies/productFont',
     fontWeight: 'fontWeights/regular',
     lineHeight: 'lineHeights/lh20',
     fontSize: 'fontSizes/fs14',
   },
 
-  'tex14/medium': {
+  'text14/medium': {
     fontFamily: 'fontFamilies/productFont',
     fontWeight: 'fontWeights/medium',
     lineHeight: 'lineHeights/lh20',
     fontSize: 'fontSizes/fs14',
   },
 
-  'tex14/semiBold': {
+  'text14/semiBold': {
     fontFamily: 'fontFamilies/productFont',
     fontWeight: 'fontWeights/semiBold',
     lineHeight: 'lineHeights/lh20',
     fontSize: 'fontSizes/fs14',
   },
 
-  'tex14/bold': {
+  'text14/bold': {
     fontFamily: 'fontFamilies/productFont',
     fontWeight: 'fontWeights/bold',
     lineHeight: 'lineHeights/lh20',
@@ -262,21 +262,21 @@ export const typographyDefault = {
     fontSize: 'fontSizes/fs36',
   },
 
-  'tex36/medium': {
+  'text36/medium': {
     fontFamily: 'fontFamilies/productFont',
     fontWeight: 'fontWeights/medium',
     lineHeight: 'lineHeights/lh44',
     fontSize: 'fontSizes/fs36',
   },
 
-  'tex36/semiBold': {
+  'text36/semiBold': {
     fontFamily: 'fontFamilies/productFont',
     fontWeight: 'fontWeights/semiBold',
     lineHeight: 'lineHeights/lh44',
     fontSize: 'fontSizes/fs36',
   },
 
-  'tex36/bold': {
+  'text36/bold': {
     fontFamily: 'fontFamilies/productFont',
     fontWeight: 'fontWeights/bold',
     lineHeight: 'lineHeights/lh44',
